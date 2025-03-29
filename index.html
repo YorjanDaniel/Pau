@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartita</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(92, 125, 233, 0.8), rgba(102, 217, 209, 0.8));
+        }
+        
+        /* Contenedor con imagen de fondo */
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background-image: url('Pau.png.jpg'); /* Ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.3);
+            position: relative;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            color: white;
+            opacity: 0;
+            animation: fadeIn 2s forwards; /* Animación de entrada */
+        }
+
+        /* Animación de aparición */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Estilos del título */
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: #3e7fd3;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        /* Efecto hover en el título */
+        h1:hover {
+            color: #8f3ac3;
+        }
+
+        /* Estilos para los párrafos */
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            transition: color 0.3s ease;
+        }
+
+        /* Efecto hover en los párrafos */
+        p:hover {
+            color: rgb(18, 6, 6);
+        }
+
+        /* Estilos para la firma */
+        .signature {
+            text-align: right;
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-top: 40px;
+            color: #ccc;
+            transition: color 0.3s ease;
+        }
+
+        /* Efecto hover en la firma */
+        .signature:hover {
+            color: #3385d2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cartita</h1>
+
+        <p>Querida Paulina,</p>
+
+        <p>Quiero aprovechar este momento para decirte algo que, aunque me cuesta mucho expresarlo, siento que es importante que sepas. Desde hace un par de semanas, he estado sintiendo algo muy especial cuando estoy contigo, y aunque es difícil ponerlo en palabras, quiero intentarlo.</p>
+
+        <p>Cada vez que compartimos tiempo juntos, me siento increíblemente bien. No sé si es la forma en que me haces reír o lo fácil que es hablar contigo, pero simplemente disfruto mucho de tu compañía. Es difícil decirlo, pero me siento muy conforme contigo, y eso me hace sentir una felicidad que no había experimentado hace mucho tiempo.</p>
+
+        <p>Gracias por ser tan increíble y por brindarme la oportunidad de conocerte más. Espero que podamos seguir compartiendo momentos y ver qué nos depara el futuro.</p>
+
+        <p class="signature">Con cariño,<br>Yorjan Daniel</p>
+    </div>
+    
+</body>
+</html>
